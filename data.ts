@@ -25,3 +25,21 @@ type Post = {
       body: 'Radiance, o personagem central em Hollow Knight, é uma entidade transcendente e imponente. Ela é a manifestação da Luz Radiante e representa uma presença divina e ameaçadora. Radiance é envolta em mistério e é considerada a fonte da corrupção que assola Hallownest. O confronto com ela é uma batalha épica e desafiadora, exigindo habilidade e estratégia do jogador. Sua presença imbuída de poder e seu design impressionante a tornam uma figura memorável e impactante na narrativa do jogo. Enfrentar a Radiance é enfrentar a própria essência da escuridão e da luz, criando um clímax emocionante e recompensador para a jornada do protagonista.'
     },
   ];
+
+  
+const postContainer = document.querySelector('.posts-container')!;
+
+posts.forEach((post) => {
+  const postHTML = `
+    <section id="post-${post.id}" class="post">
+      <a href="${post.title.toLowerCase()}.html">
+        <img id="post-image-${post.id}" src="${post.imageUrl}" alt="Post Image">
+        <h2 id="post-title-${post.id}">${post.title}</h2>
+        <p id="post-body-${post.id}">${post.body}</p>
+        <div class="expand">Expand...</div>
+      </a>
+    </section>
+  `;
+
+  postContainer.insertAdjacentHTML('beforeend', postHTML);
+});
