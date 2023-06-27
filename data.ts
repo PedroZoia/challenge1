@@ -1,3 +1,4 @@
+// Criação da lista de objetos para retornar no HTML //
 type Post = {
     id: number;
     title: string;
@@ -26,7 +27,7 @@ type Post = {
     },
   ];
 
-  
+// Criação da Função para retornar os elementos dos objetos na seção POSTS//
 const postContainer = document.querySelector('.posts-container')!;
 
 posts.forEach((post) => {
