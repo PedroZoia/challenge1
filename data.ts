@@ -107,7 +107,7 @@ const comments: Comments[] = [
   // Users from hornet page //
   {
     id: 4,
-    postId: 1,
+    postId: 2,
     email: 'usuario_4@email.com',
     body: 'Playing as Hornet in Hollow Knight is a true delight. Her fluid animations, coupled with her sharp needle and acrobatic abilities, create a unique and satisfying gameplay dynamic.'
   },
@@ -126,35 +126,44 @@ const comments: Comments[] = [
   // Users from radiance page //
   {
     id: 7,
-    postId: 1,
+    postId: 3,
     email: 'usuario_7@email.com',
     body: 'The Radiance in Hollow Knight is a captivating and formidable antagonist, adding an eerie atmosphere to the game with its ethereal presence and mysterious aura.'
   },
   {
     id: 8,
-    postId: 2,
+    postId: 3,
     email: 'usuario_8@email.com',
     body: 'The Radiance stands out as a menacing and otherworldly force in Hollow Knight, challenging players with its radiant glow and formidable powers.'
   },
   {
     id: 9,
-    postId: 2,
+    postId: 3,
     email: 'usuario_9@email.com',
     body: 'The brilliantly crafted Radiance in Hollow Knight symbolizes light and infection, adding depth to the game narrative, while its challenging boss fight showcases its overwhelming power and relentless pursuit of darkness.'
   }
 ];
 
-// This is assuming you have the selectedPost variable from the previous step
-if (selectedPost !== null) {
-  const selectedPostId = selectedPost.id;
+// Function to return comments selected by postId //
 
-  // Get the comments section
-  const commentsContainer = document.querySelector('.comments')!;
+const commentsContainer = document.querySelector('.comments');
 
-  // Check each comment
-  comments.forEach(comment => {
-    if (comment.postId === selectedPostId) {
-      // If this comment belongs to the current post, create HTML for it
+if (commentsContainer !== null) {
+  const currentPage = window.location.pathname.split('/').pop();
+
+  let selectedPostId: number | undefined;
+  if (currentPage === 'hollowknight.html') {
+    selectedPostId = 1;
+  } else if (currentPage === 'hornet.html') {
+    selectedPostId = 2;
+  } else if (currentPage === 'radiance.html') {
+    selectedPostId = 3;
+  }
+
+  if (selectedPostId !== undefined) {
+    const selectedComments = comments.filter(comment => comment.postId === selectedPostId);
+
+    selectedComments.forEach(comment => {
       const commentHTML = `
         <section class="comment">
           <span class="user-email">${comment.email}:</span>
@@ -163,11 +172,9 @@ if (selectedPost !== null) {
         </section>
       `;
 
-      // Append the comment HTML to the comments section
       commentsContainer.insertAdjacentHTML('beforeend', commentHTML);
-    }
-  });
+    });
+  }
 }
-
 
 });
