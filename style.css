@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
 body {
     background: white;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    width: 1745px;
+    height: 982px;
+    font-family: 'Inter', sans-serif;
 }
 
 header {

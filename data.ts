@@ -11,19 +11,19 @@ type Post = {
       id: 1,
       title: 'Hollowknight',
       imageUrl: 'img/hollowknight.png',
-      body: 'O protagonista de Hollow Knight, conhecido como "O Cavaleiro", é um ser silencioso e enigmático. Ele explora o mundo sombrio e perigoso de Hallownest, armado com sua Espada das Agulhas e habilidades especiais. Sua determinação inabalável o impulsiona a enfrentar criaturas grotescas e chefes temíveis, na busca por desvendar os segredos antigos e restaurar a glória perdida de seu reino. Mesmo sem diálogos, o Cavaleiro transmite uma profundidade emocional única através de gestos e ações, cativando os jogadores com sua jornada solitária e sua dedicação incansável. Ele se torna um herói sombrio e inesquecível em um mundo repleto de mistérios e perigos.'
+      body: 'The protagonist of Hollow Knight, known as "The Knight", is a silent and enigmatic being. He explores the dark and dangerous world of Hallownest, armed with his Sword of Needles and special abilities. His unwavering determination propels him to face grotesque creatures and fearsome bosses, in the quest to unravel the ancient secrets and restore the lost glory of his kingdom.'
     },
     {
       id: 2,
       title: 'Hornet',
       imageUrl: 'img/hornet.png',
-      body: 'Hornet, uma personagem marcante em Hollow Knight, é uma figura ágil e determinada. Ela é uma guerreira habilidosa, armada com sua agulha e uma atitude feroz. Hornet é uma força independente e destemida que cruza o caminho do protagonista, desafiando-o em batalhas intensas. Embora inicialmente hostil, ela revela uma complexidade surpreendente à medida que a história se desenrola. Com seu carisma e presença poderosa, Hornet se torna uma aliada inesperada e uma personagem cativante, adicionando profundidade e emoção à jornada dos jogadores pelo mundo de Hallownest.'
+      body: 'Hornet, a striking character in Hollow Knight, is an agile and determined figure. She is a skilled warrior, armed with her needle and a fierce attitude. Hornet is an independent and fearless force that crosses the path of the protagonist, challenging him in intense battles.'
     },
     {
       id: 3,
       title: 'Radiance',
       imageUrl: 'img/radiance.png',
-      body: 'Radiance, o personagem central em Hollow Knight, é uma entidade transcendente e imponente. Ela é a manifestação da Luz Radiante e representa uma presença divina e ameaçadora. Radiance é envolta em mistério e é considerada a fonte da corrupção que assola Hallownest. O confronto com ela é uma batalha épica e desafiadora, exigindo habilidade e estratégia do jogador. Sua presença imbuída de poder e seu design impressionante a tornam uma figura memorável e impactante na narrativa do jogo. Enfrentar a Radiance é enfrentar a própria essência da escuridão e da luz, criando um clímax emocionante e recompensador para a jornada do protagonista.'
+      body: 'Radiance, the antagonist in Hollow Knight, is a transcendent and imposing entity. It is the manifestation of the Radiant Light and represents a divine and threatening presence. Radiance is shrouded in mystery and is considered the source of the corruption that plagues Hallownest. The confrontation with her is an epic and challenging battle, requiring skill and strategy from the player. Her power-imbued presence and stunning design make her a memorable and impactful figure in the game narrative. To face Radiance is to face the very essence of darkness and light, creating a thrilling and rewarding climax to the protagonist journey.'
     },
   ];
 
