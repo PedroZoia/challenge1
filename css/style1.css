@@ -102,7 +102,7 @@ header {
   background-position: center;
 }
 .content-box-title {
-  left: 70px;
+  left: 54.67px;;
   top: 420px;
   position: absolute;
   color: #3A4F9A;
@@ -115,7 +115,7 @@ header {
 .content-box-description {
   width: 676.746px;
   height: 124.332px;
-  left: 70px;
+  left: 54.67px;
   top: 475.92px;
   position: absolute;
   color: #575757;
@@ -138,7 +138,7 @@ header {
   flex-direction: column;
   width: 652px;
   position: relative;
-  left: 60px;
+  left: 54.67px;
   padding: 10px;
 }
 .user-email {
