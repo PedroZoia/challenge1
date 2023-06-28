@@ -170,5 +170,4 @@ if (selectedPost !== null) {
 }
 
 
-
 });
