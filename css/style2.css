@@ -20,6 +20,9 @@ header {
   display: flex;
   align-items: center;
   gap: 8px;
+  z-index: 1;
+  top: 0;
+  position: fixed;
 }
 
 .logo {
@@ -38,7 +41,7 @@ header {
 .return-button {
   display: inline-block;
   position: relative;
-  margin-top:82px;
+  margin-top:162.96px;
   margin-left:34px;
 }
 
