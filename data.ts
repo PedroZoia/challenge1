@@ -74,7 +74,7 @@ if (selectedPost) {
     pageContainer.insertAdjacentHTML('beforeend', postHTML);
   }
 }
-});
+
 
 // List of comments //
 type Comments = {
@@ -143,3 +143,32 @@ const comments: Comments[] = [
     body: 'The brilliantly crafted Radiance in Hollow Knight symbolizes light and infection, adding depth to the game narrative, while its challenging boss fight showcases its overwhelming power and relentless pursuit of darkness.'
   }
 ];
+
+// This is assuming you have the selectedPost variable from the previous step
+if (selectedPost !== null) {
+  const selectedPostId = selectedPost.id;
+
+  // Get the comments section
+  const commentsContainer = document.querySelector('.comments')!;
+
+  // Check each comment
+  comments.forEach(comment => {
+    if (comment.postId === selectedPostId) {
+      // If this comment belongs to the current post, create HTML for it
+      const commentHTML = `
+        <section class="comment">
+          <span class="user-email">${comment.email}:</span>
+          <span class="user-comment">${comment.body}</span>
+          <hr class="divider">
+        </section>
+      `;
+
+      // Append the comment HTML to the comments section
+      commentsContainer.insertAdjacentHTML('beforeend', commentHTML);
+    }
+  });
+}
+
+
+
+});
