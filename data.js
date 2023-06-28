@@ -9,7 +9,7 @@ var posts = [
         id: 2,
         title: 'Hornet',
         imageUrl: 'img/hornet.jpg',
-        body: 'Hornet, a striking character in Hollow Knight, is an agile and determined figure. She is a skilled warrior, armed with her needle and a fierce attitude. Hornet is an independent and fearless force that crosses the path of the protagonist, challenging him in intense battles.'
+        body: 'Hornet, a striking character in Hollow Knight, is an agile and determined figure. She is a skilled warrior, armed with her needle and a fierce attitude. Hornet is an independent and fearless force that crosses the path of the protagonist, challenging him in intense battles.Despite her initial hostility, Hornet gradually reveals a complex personality, driven by a deeper purpose and a sense of duty that goes beyond mere combat.'
     },
     {
         id: 3,
