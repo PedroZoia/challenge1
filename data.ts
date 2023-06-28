@@ -9,7 +9,7 @@ type Post = {
   const posts: Post[] = [
     {
       id: 1,
-      title: 'Hollow Knight',
+      title: 'Hollowknight',
       imageUrl: 'img/hollowknight.png',
       body: 'O protagonista de Hollow Knight, conhecido como "O Cavaleiro", é um ser silencioso e enigmático. Ele explora o mundo sombrio e perigoso de Hallownest, armado com sua Espada das Agulhas e habilidades especiais. Sua determinação inabalável o impulsiona a enfrentar criaturas grotescas e chefes temíveis, na busca por desvendar os segredos antigos e restaurar a glória perdida de seu reino. Mesmo sem diálogos, o Cavaleiro transmite uma profundidade emocional única através de gestos e ações, cativando os jogadores com sua jornada solitária e sua dedicação incansável. Ele se torna um herói sombrio e inesquecível em um mundo repleto de mistérios e perigos.'
     },
